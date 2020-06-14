@@ -8,6 +8,9 @@ verify_ssl = true
 [packages]
 fastapi = "*"
 uvicorn = "*"
+mongoengine = "*"
+python-dotenv = "*"
+pymongo = "*"
 
 [requires]
 python_version = "3.8"
