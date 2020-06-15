@@ -1,3 +1,5 @@
+![Docker](https://github.com/w84thesun/list-employees/workflows/Docker/badge.svg)
+
 # list-employees
 
 Чтобы запустить в docker:
