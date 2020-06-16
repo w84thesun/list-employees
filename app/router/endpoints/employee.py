@@ -19,7 +19,7 @@ def validate_filter(field: str, value: Any = None) -> Any:
         return value
 
 
-def find_by_field(
+async def find_by_field(
         filter_field: str = None,
         filter_value: Any = None
 ) -> List[Employee]:
@@ -44,13 +44,13 @@ def validate_range(field: str, range_from: Any = None, range_to: Any = None):
         try:
             r = {"from": int(range_from), "to": int(range_to)}
             return r
-        except ValueError as e:
+        except ValueError:
             return None
     else:
         return {"from": range_from, "to": range_to}
 
 
-def find_by_range(
+async def find_by_range(
         filter_field: str = None,
         range_from: Any = None,
         range_to: Any = None
